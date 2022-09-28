@@ -14,14 +14,14 @@
 <br><br>
 
 ## Portfolio & Tech Blog
----
+
 📌Figma UI design - (URL)
 <br>
 📌Live URL - (URL)
 <br><br>
 
 ## Admin
----
+
 📌Figma UI design - (URL)
 <br><br>
 
@@ -31,4 +31,4 @@ This site will be used for,
 - adding new projects for the portfolio 
 
 ## Backend API
----
+
