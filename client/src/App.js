@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+
+// components
+import {Navbar} from './portfolio/components/.'
+import {Sample} from './portfolio/components/.'
 
 function App() {
   return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
+		<>
+		<Navbar />
+		{/* <Sample /> */}
 
-				<div className="sample-animate text-red-600" data-aos="fade-up">
-					hello world
-				</div>
-				<div className="sample-animate" data-aos="fade-up">
-					hello world
-				</div>
-				<div className="sample-animate" data-aos="fade-up">
-					hello world
-				</div>
-			</header>
-		</div>
+		<div className="bg__gradient mt-16 text-white p-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti iusto fuga debitis molestias, laudantium rem delectus blanditiis itaque! Minima saepe illo earum nemo culpa dignissimos numquam dolore obcaecati, eveniet sequi.</div>
+		</>
 	);
 }
+
+{/* <div className="sample-animate" data-aos="fade-up">
+	hello world
+</div> */}
 
 export default App;
