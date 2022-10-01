@@ -12,11 +12,14 @@ const HeroBanner = () => {
 					<img
 						src={profilePic}
 						alt="profile"
-						className="w-50 mb-5 px-4 md:px-0"
+						className="w-50 mb-5 px-4 md:px-0 cursor-pointer hover:drop-shadow-2xl hover:scale-105 transform duration-300"
 					/>
 
 					<div className="flex gap-3 justify-center">
-						<ButtonWhite icon={todoListIcon} title="Projects" />
+						<ButtonWhite
+							icon={todoListIcon}
+							title="Projects"
+						/>
 						<ButtonWhite icon={githubIcon} title="Github" />
 					</div>
 				</div>

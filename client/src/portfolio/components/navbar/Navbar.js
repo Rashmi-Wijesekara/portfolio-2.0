@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 
 import logo from "../../../assets/portfolio/logo.svg";
 import {CVButton} from "../../components/."
+import {ContactSide} from "../../components/."
 
 const Navbar = () => {
 	const mobileNavbar = useRef();
@@ -44,7 +45,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className="backdrop-blur-lg fixed left-0 right-0 top-0 flex flex-row border-b-4 border-darkBlue py-2 md:mx-14">
+			<div className="backdrop-blur-lg fixed z-10 left-0 right-0 top-0 flex flex-row border-b-4 border-darkBlue py-2 md:mx-14">
 				{/* logo */}
 				<img src={logo} alt="logo" />
 
@@ -67,7 +68,7 @@ const Navbar = () => {
 				<div className="hidden md:flex my-auto w-[80%] px-5 ml-auto">
 					{navigations.map((item) => (
 						<a
-							className="text-fontLightBlue font-poppins font-semibold my-3 ml-3 mx-auto"
+							className="text-fontLightBlue font-poppins font-semibold my-3 ml-3 mx-auto cursor-pointer hover:scale-125 transform duration-300 active:translate-y-2"
 							href={item.url}
 							key={item.id}
 						>
@@ -87,7 +88,7 @@ const Navbar = () => {
 			>
 				{navigations.map((item) => (
 					<a
-						className="text-fontLightBlue font-poppins font-semibold my-3 ml-3"
+						className="text-fontLightBlue w-fit font-poppins font-semibold my-3 ml-3"
 						href={item.url}
 						key={item.id}
 					>
@@ -95,9 +96,14 @@ const Navbar = () => {
 					</a>
 				))}
 
-				<div className="mt-2">
+				<div className="mt-2 w-fit">
 					<CVButton />
 				</div>
+			</div>
+
+			{/* say hello fixed element */}
+			<div className="">
+				<ContactSide />
 			</div>
 		</>
 	);
