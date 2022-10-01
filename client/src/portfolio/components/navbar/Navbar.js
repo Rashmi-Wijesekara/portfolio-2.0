@@ -44,7 +44,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className="bg__gradient fixed left-0 right-0 top-0 flex flex-row border-b-4 border-darkBlue py-2">
+			<div className="backdrop-blur-lg fixed left-0 right-0 top-0 flex flex-row border-b-4 border-darkBlue py-2 md:mx-14">
 				{/* logo */}
 				<img src={logo} alt="logo" />
 

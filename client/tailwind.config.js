@@ -7,10 +7,11 @@ module.exports = {
 				fontLightBlue: "#AEFEFF",
 				darkBlue: "#35858B",
 				white: "#FFFFFF",
+				bgDark: "#072227",
 			},
 			fontFamily: {
-				'poppins': ['Poppins'],
-			}
+				poppins: ["Poppins"],
+			},
 		},
 	},
 	plugins: [],
