@@ -22,7 +22,7 @@ const ContactSide = () => {
 					<img
 						src={github}
 						alt=""
-						className="w-auto mx-auto my-2 cursor-pointer"
+						className="w-auto mx-auto my-2 cursor-pointer hover:scale-90 hover:shadow-2xl transform duration-300"
 						onClick={() =>
 							openLink(
 								"https://github.com/Rashmi-Wijesekara"
@@ -32,7 +32,7 @@ const ContactSide = () => {
 					<img
 						src={linkedin}
 						alt=""
-						className="w-auto mx-auto my-2 cursor-pointer"
+						className="w-auto mx-auto my-2 cursor-pointer hover:scale-90 hover:shadow-2xl transform duration-300"
 						onClick={() =>
 							openLink(
 								"https://www.linkedin.com/in/rashmi-wijesekara-a1a1881b3/"
@@ -42,7 +42,7 @@ const ContactSide = () => {
 					<img
 						src={twitter}
 						alt=""
-						className="w-auto mx-auto my-2 cursor-pointer"
+						className="w-auto mx-auto my-2 cursor-pointer hover:scale-90 hover:shadow-2xl transform duration-300"
 						onClick={() =>
 							openLink("https://twitter.com/Rashmi_W_")
 						}

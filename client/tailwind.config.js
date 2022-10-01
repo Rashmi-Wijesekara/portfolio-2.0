@@ -8,6 +8,7 @@ module.exports = {
 				darkBlue: "#35858B",
 				white: "#FFFFFF",
 				bgDark: "#072227",
+				lightPara: "#ADC6CB",
 			},
 			fontFamily: {
 				poppins: ["Poppins"],
