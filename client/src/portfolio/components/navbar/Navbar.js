@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 
 import logo from "../../../assets/portfolio/logo.svg";
+import {CVButton} from "../../components/."
 
 const Navbar = () => {
 	const mobileNavbar = useRef();
@@ -43,7 +44,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className="bg__gradient fixed left-0 right-0 top-0 flex flex-row border-b-4 border-darkBlue">
+			<div className="bg__gradient fixed left-0 right-0 top-0 flex flex-row border-b-4 border-darkBlue py-2">
 				{/* logo */}
 				<img src={logo} alt="logo" />
 
@@ -62,7 +63,21 @@ const Navbar = () => {
 					<path d="M4 6h16M4 12h16M4 18h16"></path>
 				</svg>
 
-
+				{/* desktop navbar */}
+				<div className="hidden md:flex my-auto w-[80%] px-5 ml-auto">
+					{navigations.map((item) => (
+						<a
+							className="text-fontLightBlue font-poppins font-semibold my-3 ml-3 mx-auto"
+							href={item.url}
+							key={item.id}
+						>
+							{item.title}
+						</a>
+					))}
+					<div className="ml-auto">
+						<CVButton />
+					</div>
+				</div>
 			</div>
 
 			{/* mobile navbar popup */}
@@ -70,11 +85,19 @@ const Navbar = () => {
 				ref={mobileNavbar}
 				className="bg__gradient fixed left-0 z-30 top-18 opacity-0 h-screen flex flex-col p-4 text-white md:hidden w-0 transition-[width] duration-1000"
 			>
-				{navigations.map(item => (
-					<a className="text-fontLightBlue font-poppins font-semibold my-3 ml-3" href={item.url} key={item.id}>
+				{navigations.map((item) => (
+					<a
+						className="text-fontLightBlue font-poppins font-semibold my-3 ml-3"
+						href={item.url}
+						key={item.id}
+					>
 						{item.title}
 					</a>
 				))}
+
+				<div className="mt-2">
+					<CVButton />
+				</div>
 			</div>
 		</>
 	);

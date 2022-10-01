@@ -2,7 +2,10 @@ import './App.css';
 
 // components
 import {Navbar} from './portfolio/components/.'
-import {Sample} from './portfolio/components/.'
+// import {Sample} from './portfolio/components/.'
+
+// containers
+import {About} from './portfolio/containers'
 
 function App() {
   return (
@@ -10,7 +13,8 @@ function App() {
 		<Navbar />
 		{/* <Sample /> */}
 
-		<div className="bg__gradient mt-16 text-white p-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti iusto fuga debitis molestias, laudantium rem delectus blanditiis itaque! Minima saepe illo earum nemo culpa dignissimos numquam dolore obcaecati, eveniet sequi.</div>
+		<About />
+		{/* <div className="bg__gradient mt-16 text-white p-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti iusto fuga debitis molestias, laudantium rem delectus blanditiis itaque! Minima saepe illo earum nemo culpa dignissimos numquam dolore obcaecati, eveniet sequi.</div> */}
 		</>
 	);
 }

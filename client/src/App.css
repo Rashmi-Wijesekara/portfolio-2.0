@@ -7,3 +7,12 @@
 		#072227 82.19%
 	);
 }
+
+.cvbtn {
+	border: 3px solid #aefeff;
+	filter: drop-shadow(
+		3px 5px 10px rgba(178, 239, 235, 0.88)
+	);
+	backdrop-filter: blur(10px);
+	border-radius: 6px;
+}
