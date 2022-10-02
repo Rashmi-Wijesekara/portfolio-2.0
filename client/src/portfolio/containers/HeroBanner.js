@@ -1,12 +1,17 @@
 import React from "react";
 import profilePic from "../../assets/portfolio/propic.svg";
-import {ButtonWhite} from "../components/."
-import todoListIcon from '../../assets/portfolio/todo-list.svg'
-import githubIcon  from '../../assets/portfolio/github-icon.svg'
+import { ButtonWhite } from "../components/.";
+import todoListIcon from "../../assets/portfolio/todo-list.svg";
+import githubIcon from "../../assets/portfolio/github-icon.svg";
 
 const HeroBanner = () => {
 	return (
-		<div className="font-poppins mt-20 text-white md:px-20 py-20">
+		<div
+			className="font-poppins mt-20 text-white md:px-20 py-20"
+			data-aos="fade-right"
+			data-aos-offset="300"
+			data-aos-easing="ease-in-sine"
+		>
 			<div className="flex flex-col items-center md:flex-row-reverse">
 				<div className="mb-10 md:mb-0 md:mx-auto">
 					<img

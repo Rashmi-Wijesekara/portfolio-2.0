@@ -5,7 +5,12 @@ const SkillItem = (props) => {
 	const items = props.items
 
 	return (
-		<div className="skill-item bg-boxBg w-72 p-5 my-5 mx-auto md:gap-x-2">
+		<div
+			data-aos="flip-left"
+			data-aos-offset="300"
+			data-aos-easing="ease-in-sine"
+			className="skill-item bg-boxBg w-72 p-5 my-5 mx-auto md:gap-x-2"
+		>
 			<div className="font-poppins text-white font-light text-center mb-6">
 				{title}
 			</div>
