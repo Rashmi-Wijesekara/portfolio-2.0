@@ -9,6 +9,7 @@ module.exports = {
 				white: "#FFFFFF",
 				bgDark: "#072227",
 				lightPara: "#ADC6CB",
+				boxBg: "#00454A",
 			},
 			fontFamily: {
 				poppins: ["Poppins"],

@@ -1,0 +1,136 @@
+{
+	"skills": [
+		{
+			"id": 1,
+			"skill": "Programming Languages",
+			"items": [
+				{
+					"name": "C",
+					"icon": "c"
+				},
+				{
+					"name": "Java",
+					"icon": "java"
+				},
+				{
+					"name": "Javascript",
+					"icon": "javascript"
+				},
+				{
+					"name": "Python",
+					"icon": "python"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"skill": "Front-end Development",
+			"items": [
+				{
+					"name": "HTML",
+					"icon": "html"
+				},
+				{
+					"name": "CSS",
+					"icon": "css"
+				},
+				{
+					"name": "Tailwind CSS",
+					"icon": "tailwind"
+				},
+				{
+					"name": "Boostrap",
+					"icon": "boostrap"
+				},
+				{
+					"name": "Material UI",
+					"icon": "material-ui"
+				},
+				{
+					"name": "React JS",
+					"icon": "react-js"
+				},
+				{
+					"name": "Next JS",
+					"icon": "next-js"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"skill": "Back-end Development",
+			"items": [
+				{
+					"name": "PHP",
+					"icon": "php"
+				},
+				{
+					"name": "Node JS",
+					"icon": "node-js"
+				},
+				{
+					"name": "Express JS",
+					"icon": "express-js"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"skill": "Databases",
+			"items": [
+				{
+					"name": "Firebase",
+					"icon": "firebase"
+				},
+				{
+					"name": "MongoDB",
+					"icon": "mongodb"
+				},
+				{
+					"name": "MySQL",
+					"icon": "mysql"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"skill": "Web Hosting",
+			"items": [
+				{
+					"name": "Firebase",
+					"icon": "firebase-hosting"
+				},
+				{
+					"name": "Heroku",
+					"icon": "heroku"
+				},
+				{
+					"name": "Vercel",
+					"icon": "vercel"
+				}
+			]
+		},
+		{
+			"id": 6,
+			"skill": "Software",
+			"items": [
+				{
+					"name": "Figma",
+					"icon": "figma"
+				},
+				{
+					"name": "Git",
+					"icon": "git"
+				},
+				{
+					"name": "Postman",
+					"icon": "postman"
+				},
+				{
+					"name": "XAMPP",
+					"icon": "xampp"
+				}
+			]
+		}
+	]
+}

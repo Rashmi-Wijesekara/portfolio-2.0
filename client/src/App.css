@@ -1,4 +1,5 @@
-body, .bg__gradient {
+body,
+.bg__gradient {
 	background: linear-gradient(
 		270deg,
 		#297075 0%,
@@ -15,4 +16,13 @@ body, .bg__gradient {
 	);
 	backdrop-filter: blur(10px);
 	border-radius: 6px;
+}
+
+.skill-item {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+}
+.skill-icon-wrapper {
+	box-shadow: 1px 11px 23px 18px rgba(0, 0, 0, 0.23);
+	border-radius: 12px;
 }
