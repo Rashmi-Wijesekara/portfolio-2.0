@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Back = () => {
 	return (
-		<div className="text-white w-60 border p-20">
-			hellooooo
-		</div>
+		<div className="text-white w-80 border p-20">back</div>
 	);
-}
+};
 
-export default Back
+export default Back;

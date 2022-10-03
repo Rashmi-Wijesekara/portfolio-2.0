@@ -1,0 +1,15 @@
+{
+	"projects": [
+		{
+			"id": 1,
+			"title": "Portfolio v1.0",
+			"image": "https://i.imgur.com/Q8JMgxZ.png",
+			"live-link": "https://rashmi-wijesekara.github.io/portfolio/",
+			"repo-link": "https://github.com/Rashmi-Wijesekara/portfolio",
+			"description": "My previous portfolio site",
+			"technologies": [
+				"HTML, CSS", "Boostrap"
+			]
+		}
+	]
+}
