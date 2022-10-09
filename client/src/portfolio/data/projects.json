@@ -6,9 +6,22 @@
 			"image": "https://i.imgur.com/Q8JMgxZ.png",
 			"live-link": "https://rashmi-wijesekara.github.io/portfolio/",
 			"repo-link": "https://github.com/Rashmi-Wijesekara/portfolio",
-			"description": "My previous portfolio site",
+			"description": "My previous portfolio site.",
 			"technologies": [
 				"HTML, CSS", "Boostrap"
+			]
+		},
+		{
+			"id": 2,
+			"title": "Smart Parking System",
+			"image": "https://i.imgur.com/dGNsaqr.png",
+			"live-link": "https://rashmi-wijesekara.github.io/portfolio/",
+			"repo-link": "https://github.com/Rashmi-Wijesekara/portfolio",
+			"description": "IoT parking system for a company with 4 separate sites for admin, employees, security officers, and backend API using MERN stack.",
+			"technologies": [
+				"React JS",
+				"Tailwind",
+				"MERN"
 			]
 		}
 	]

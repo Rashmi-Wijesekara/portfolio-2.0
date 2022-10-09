@@ -10,6 +10,7 @@ module.exports = {
 				bgDark: "#072227",
 				lightPara: "#ADC6CB",
 				boxBg: "#00454A",
+				btnBg: "#52C2CA",
 			},
 			fontFamily: {
 				poppins: ["Poppins"],

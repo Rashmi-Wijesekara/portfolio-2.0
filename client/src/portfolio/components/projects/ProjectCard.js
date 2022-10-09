@@ -2,40 +2,30 @@ import React, { useState } from "react";
 import { Front, Back } from "../../components/.";
 import ReactCardFlip from "react-card-flip";
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
 	const [flipped, setFlipped] = useState(false);
+	const project = props.project;
 
 	const flip = () => {
 		setFlipped(!flipped);
 	};
 
 	return (
-		<div className="w-80">
-			<ReactCardFlip
-				isFlipped={flipped}
-				// cardStyles={{
-				// 	front: {
-				// 		width: "15rem"
-				// 	},
-				// 	back: {
-				// 		width: "15rem"
-				// 	}
-				// }}
-				// containerStyle={{
-				// 	width: "15rem"
-				// }}
-			>
+		<div className="w-80 h-96">
+			<ReactCardFlip isFlipped={flipped}>
 				<div
 					className="w-80 cursor-pointer"
 					onMouseEnter={flip}
+					onClick={flip}
 				>
-					<Front />
+					<Front project={project} key={project.id} />
 				</div>
 				<div
 					className="w-80 cursor-pointer"
 					onMouseLeave={flip}
+					onClick={flip}
 				>
-					<Back />
+					<Back project={project} key={project.id} />
 				</div>
 			</ReactCardFlip>
 		</div>
