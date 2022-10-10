@@ -20,6 +20,15 @@
 		},
 		{
 			"id": 3,
+			"title": "Travel Agency Landing Page",
+			"image": "https://i.imgur.com/ChpnmhS.png",
+			"repo-link": "https://github.com/Rashmi-Wijesekara/travel-agency-landing-page",
+			"live-link": "https://travel-agency-landing-page-nine.vercel.app/",
+			"description": "A landing page for a travel agency.",
+			"technologies": ["React JS", "Boostrap"]
+		},
+		{
+			"id": 4,
 			"title": "Blog Site UI Design",
 			"image": "https://i.imgur.com/8EoQp2V.png",
 			"design-link": "https://www.figma.com/file/AQmnCqmfNKCuc3AYvINoqp/my-blog?node-id=0%3A1",
@@ -27,7 +36,7 @@
 			"technologies": ["Figma"]
 		},
 		{
-			"id": 4,
+			"id": 5,
 			"title": "Q&A System UI Design",
 			"image": "https://i.imgur.com/BktySKT.png",
 			"design-link": "https://www.figma.com/file/j5soOrQjLwNEVs0JEHQyzB/Q%26A-System",
@@ -35,13 +44,47 @@
 			"technologies": ["Figma"]
 		},
 		{
-			"id": 5,
+			"id": 6,
 			"title": "Digital Agency Landing Page",
 			"image": "https://i.imgur.com/MivVZ9P.png",
 			"repo-link": "https://github.com/Rashmi-Wijesekara/digital-agency-landing-page",
 			"live-link": "https://digital-agency-landing-page.vercel.app/",
 			"description": "A landing page for a digital agency.",
 			"technologies": ["HTML, CSS", "Tailwind"]
+		},
+		{
+			"id": 7,
+			"title": "TabSaver Chrome Extension",
+			"image": "https://i.imgur.com/3aNdfLd.png",
+			"repo-link": "https://github.com/Rashmi-Wijesekara/Tabsaver-chrome-extension",
+			"description": "A chrome extension to save tab URLs in the local storage.",
+			"technologies": ["HTML, CSS", "Javascript"]
+		},
+		{
+			"id": 8,
+			"title": "Ceylon Tea Cloud",
+			"image": "https://i.imgur.com/RPsPHjp.png",
+			"repo-link": "https://github.com/kavishkamk/ceylonTeaCloud",
+			"description": "A cloud-based service platform which was implemented to make the connection comfortable between the tea fatories in Sri Lanka and their growers.",
+			"technologies": [
+				"HTML, CSS",
+				"Javascript",
+				"PHP",
+				"MySQL"
+			]
+		},
+		{
+			"id": 9,
+			"title": "ChatChops",
+			"image": "https://i.imgur.com/dxUS2sa.png",
+			"repo-link": "https://github.com/Rashmi-Wijesekara/ChatChops",
+			"description": "A real-time web-based chat application by using a PHP Ratchet server.",
+			"technologies": [
+				"HTML, CSS",
+				"Javascript",
+				"PHP",
+				"MySQL"
+			]
 		}
 	]
 }
