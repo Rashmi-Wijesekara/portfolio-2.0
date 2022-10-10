@@ -1,4 +1,7 @@
 import React from "react";
+import { ButtonWhite } from "../../components/.";
+import githubIcon from "../../../assets/portfolio/github-icon.svg";
+import figmaIcon from "../../../assets/portfolio/skills/figma.svg";
 
 const Back = (props) => {
 	const project = props.project;
@@ -25,18 +28,45 @@ const Back = (props) => {
 				</div>
 				<div className="flex flex-wrap gap-2 md:gap-3 my-3">
 					{project.technologies.map((item) => (
-						<div className="bg-white rounded-2xl text-bgDark font-medium px-3 py-0.5 text-sm">
+						<div
+							key={item}
+							className="bg-white rounded-2xl text-bgDark font-medium px-3 py-0.5 text-sm"
+						>
 							{item}
 						</div>
 					))}
 				</div>
 			</div>
 
-			<div
-				className="bg-fontLightBlue font-semibold px-3 py-2 mx-5 rounded-lg my-3 w-fit text-bgDark shadow-xl absolute bottom-4
-			cursor-pointer hover:drop-shadow-2xl hover:scale-110 transform duration-300 active:translate-y-2"
-			>
-				View Demo
+			<div className="flex flex-row w-full absolute bottom-4 items-center justify-around">
+				{project["live-link"] && (
+					<div
+						onClick={() => {
+							window.open(project["live-link"]);
+						}}
+						className="bg-fontLightBlue font-semibold px-3 py-2 rounded-lg my-3 w-fit text-bgDark shadow-xl
+				cursor-pointer hover:drop-shadow-2xl hover:scale-110 transform duration-300 active:translate-y-2"
+					>
+						View Demo
+					</div>
+				)}
+
+				{project["repo-link"] && (
+					<div className="height-[43px] py-1 bg-white rounded-lg">
+						<ButtonWhite
+							onClick={() => {
+								window.open(project["repo-link"]);
+							}}
+							icon={githubIcon}
+						/>
+					</div>
+				)}
+
+				{project["design-link"] && (
+					<div className="height-[43px] py-1">
+						<ButtonWhite icon={figmaIcon} />
+					</div>
+				)}
 			</div>
 		</div>
 	);

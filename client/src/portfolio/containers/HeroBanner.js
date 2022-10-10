@@ -25,7 +25,15 @@ const HeroBanner = () => {
 							icon={todoListIcon}
 							title="Projects"
 						/>
-						<ButtonWhite icon={githubIcon} title="Github" />
+						<ButtonWhite
+							icon={githubIcon}
+							title="Github"
+							onClick={() => {
+								window.open(
+									"https://github.com/Rashmi-Wijesekara"
+								);
+							}}
+						/>
 					</div>
 				</div>
 				<div className="px-5 md:px-0 md:mx-auto">

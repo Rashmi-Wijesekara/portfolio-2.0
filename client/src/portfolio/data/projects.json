@@ -7,22 +7,41 @@
 			"live-link": "https://rashmi-wijesekara.github.io/portfolio/",
 			"repo-link": "https://github.com/Rashmi-Wijesekara/portfolio",
 			"description": "My previous portfolio site.",
-			"technologies": [
-				"HTML, CSS", "Boostrap"
-			]
+			"technologies": ["HTML, CSS", "Boostrap"]
 		},
 		{
 			"id": 2,
 			"title": "Smart Parking System",
 			"image": "https://i.imgur.com/dGNsaqr.png",
-			"live-link": "https://rashmi-wijesekara.github.io/portfolio/",
-			"repo-link": "https://github.com/Rashmi-Wijesekara/portfolio",
+			"repo-link": "https://github.com/Rashmi-Wijesekara/smart-parking-system-security-officer",
+			"design-link": "https://www.figma.com/file/UIW1ol446bmn4MZe1i6uzh/smart-parking-system?node-id=0%3A1",
 			"description": "IoT parking system for a company with 4 separate sites for admin, employees, security officers, and backend API using MERN stack.",
-			"technologies": [
-				"React JS",
-				"Tailwind",
-				"MERN"
-			]
+			"technologies": ["React JS", "Tailwind", "MERN"]
+		},
+		{
+			"id": 3,
+			"title": "Blog Site UI Design",
+			"image": "https://i.imgur.com/8EoQp2V.png",
+			"design-link": "https://www.figma.com/file/AQmnCqmfNKCuc3AYvINoqp/my-blog?node-id=0%3A1",
+			"description": "UI design for a tech blog site.",
+			"technologies": ["Figma"]
+		},
+		{
+			"id": 4,
+			"title": "Q&A System UI Design",
+			"image": "https://i.imgur.com/BktySKT.png",
+			"design-link": "https://www.figma.com/file/j5soOrQjLwNEVs0JEHQyzB/Q%26A-System",
+			"description": "UI design for mobile app which can be used by universities to have all the discussion forums of all modules at one place.",
+			"technologies": ["Figma"]
+		},
+		{
+			"id": 5,
+			"title": "Digital Agency Landing Page",
+			"image": "https://i.imgur.com/MivVZ9P.png",
+			"repo-link": "https://github.com/Rashmi-Wijesekara/digital-agency-landing-page",
+			"live-link": "https://digital-agency-landing-page.vercel.app/",
+			"description": "A landing page for a digital agency.",
+			"technologies": ["HTML, CSS", "Tailwind"]
 		}
 	]
 }

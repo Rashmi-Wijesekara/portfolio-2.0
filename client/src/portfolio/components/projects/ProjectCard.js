@@ -11,7 +11,12 @@ const ProjectCard = (props) => {
 	};
 
 	return (
-		<div className="w-80 h-96">
+		<div
+			data-aos="flip-left"
+			data-aos-offset="300"
+			data-aos-easing="ease-in-sine"
+			className="w-80 h-96 mx-auto"
+		>
 			<ReactCardFlip isFlipped={flipped}>
 				<div
 					className="w-80 cursor-pointer"
