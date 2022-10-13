@@ -1,11 +1,24 @@
-import React from 'react'
+import React, {
+	useContext,
+	useRef,
+	useEffect,
+} from "react";
+import { DefaultContext } from "../../context/DefaultContext";
+import { scrolling } from "../../functions/Scrolling";
+
 import {SkillItem} from '../components/.'
-import skills from '../data/skills.json'
+import skillsData from '../data/skills.json'
 
 const Skills = () => {
+	const skillsRef = useRef()
+	const {skills, setSkills_function} = useContext(DefaultContext)
+
+	useEffect(() => {
+		scrolling(skillsRef);
+	}, [skills]);
 
 	return (
-		<div className="flex flex-wrap mx-2 sm:mx-10 md:mx-20 border-4 rounded-2xl border-white p-3 my-20 md:mt-40">
+		<div ref={skillsRef} className="flex flex-wrap mx-2 sm:mx-10 md:mx-20 border-4 rounded-2xl border-white p-3 my-20 py-20">
 			<div className="w-48 my-auto md:pl-4 mx-auto md:mx-0">
 				<div className="font-poppins text-center md:text-left md:text-lg font-semibold text-fontLightBlue tracking-widest">
 					MY SKILLS
@@ -14,7 +27,7 @@ const Skills = () => {
 					SKILL SET
 				</div>
 			</div>
-			{skills.skills.map((skill) => (
+			{skillsData.skills.map((skill) => (
 				<SkillItem
 					key={skill.id}
 					skill={skill.skill}

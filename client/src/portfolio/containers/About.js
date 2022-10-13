@@ -1,23 +1,26 @@
-import React, {useContext, useRef, useState, useEffect} from 'react'
-import img from '../../assets/portfolio/about-image.svg'
-import {DefaultContext} from "../../context/DefaultContext"
-import {scrolling} from "../../functions/Scrolling"
+import React, {
+	useContext,
+	useRef,
+	useState,
+	useEffect,
+} from "react";
+import img from "../../assets/portfolio/about-image.svg";
+import { DefaultContext } from "../../context/DefaultContext";
+import { scrolling } from "../../functions/Scrolling";
 
 const About = () => {
-	const aboutRef = useRef()
-	const {about, setAbout_function} = useContext(DefaultContext)
+	const aboutRef = useRef();
+	const { about, setAbout_function } =
+		useContext(DefaultContext);
 
 	useEffect(() => {
-		if(aboutRef) {
-			scrolling(aboutRef)
-		}
-	}, [about])
-	
+		scrolling(aboutRef);
+	}, [about]);
 
 	return (
 		<div
 			ref={aboutRef}
-			className="flex flex-col md:flex-row md:mx-20 md:py-20"
+			className="flex flex-col md:flex-row md:mx-20 py-24"
 		>
 			<div
 				data-aos="flip-left"
@@ -51,6 +54,6 @@ const About = () => {
 			</div>
 		</div>
 	);
-}
+};
 
-export default About
+export default About;

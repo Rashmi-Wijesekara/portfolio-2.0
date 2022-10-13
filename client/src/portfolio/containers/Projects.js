@@ -1,12 +1,27 @@
-import React from 'react'
-import {ProjectCard} from '../components/.'
-import projects from '../data/projects.json'
+import React, {
+	useContext,
+	useRef,
+	useEffect,
+} from "react";
+import { DefaultContext } from "../../context/DefaultContext";
+
+import { ProjectCard } from "../components/.";
+import projectsSamples from "../data/projects.json";
+import { scrolling } from "../../functions/Scrolling";
 
 const Projects = () => {
-	const projectsData = projects.projects
+	const projectsData = projectsSamples.projects;
+
+	const projectsRef = useRef();
+	const { projects, setProjects_function } =
+		useContext(DefaultContext);
+
+	useEffect(() => {
+		scrolling(projectsRef);
+	}, [projects]);
 
 	return (
-		<div className="my-40">
+		<div ref={projectsRef} className="my-20 py-20">
 			<div className="my-10">
 				<div className="font-poppins text-center md:text-lg font-semibold text-fontLightBlue tracking-widest">
 					MY WORKS
@@ -22,6 +37,6 @@ const Projects = () => {
 			</div>
 		</div>
 	);
-}
+};
 
-export default Projects
+export default Projects;

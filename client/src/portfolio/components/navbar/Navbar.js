@@ -1,19 +1,28 @@
 import React, { useRef, useContext } from "react";
-import {DefaultContext} from "../../../context/DefaultContext"
+import { DefaultContext } from "../../../context/DefaultContext";
 
 import logo from "../../../assets/portfolio/logo.svg";
-import {CVButton} from "../../components/."
-import {ContactSide} from "../../components/."
+import { CVButton } from "../../components/.";
+import { ContactSide } from "../../components/.";
 
 const Navbar = () => {
 	const mobileNavbar = useRef();
-	const { about, setAbout_function } = useContext(DefaultContext);
+	const {
+		about,
+		setAbout_function,
+		skills,
+		setSkills_function,
+		projects,
+		setProjects_function,
+		contact,
+    setContact_function,
+	} = useContext(DefaultContext);
 
 	// mobile navbar show and hide
 	const mobileNavHandler = () => {
 		mobileNavbar.current.classList.toggle("opacity-0");
 		mobileNavbar.current.classList.toggle("w-0");
-		mobileNavbar.current.classList.toggle("w-[70%]")
+		mobileNavbar.current.classList.toggle("w-[70%]");
 		// console.log(mobileNavbar.current.className)
 	};
 
@@ -46,9 +55,19 @@ const Navbar = () => {
 	];
 
 	const navbarScrollHandler = (name) => {
-		// console.log(about)
-		setAbout_function()
-	}
+
+		if(name === "About") {
+			setAbout_function();
+		}else if(name === "Contact") {
+			setContact_function();
+		}else if(name === "Projects") {
+			setProjects_function();
+		}else if(name === "Skills") {
+			setSkills_function();
+		}else if(name === "Blog") {
+			console.log(name);
+		}
+	};
 
 	return (
 		<>
@@ -78,7 +97,9 @@ const Navbar = () => {
 							className="text-fontLightBlue font-poppins font-semibold my-3 ml-3 mx-auto cursor-pointer hover:scale-125 transform duration-300 active:translate-y-2"
 							// href={item.url}
 							key={item.id}
-							onClick={() => navbarScrollHandler(item.title)}
+							onClick={() =>
+								navbarScrollHandler(item.title)
+							}
 						>
 							{item.title}
 						</div>

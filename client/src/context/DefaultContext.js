@@ -8,13 +8,25 @@ const DefaultProvider = ({ children }) => {
 	const [currentPath, setCurrentPath] = useState(window.location.pathname)
 	const [section, setSection] = useState("")
 	const [about, setAbout] = useState(false)
+	const [skills, setSkills] = useState(false)
+	const [projects, setProjects] = useState(false)
+	const [contact, setContact] = useState(false)
 
 	const setCurrentPath_function = ()=> {
 		setCurrentPath(window.location.pathname)
 	}
 
 	const setAbout_function = ()=> {
-		setAbout(true)
+		setAbout(!about)
+	}
+	const setSkills_function = ()=> {
+		setSkills(!skills)
+	}
+	const setProjects_function = ()=> {
+    setProjects(!projects)
+	}
+	const setContact_function = ()=> {
+    setContact(!contact)
 	}
 
 	return (
@@ -23,6 +35,12 @@ const DefaultProvider = ({ children }) => {
 			setCurrentPath_function,
 			about,
 			setAbout_function,
+			skills,
+      setSkills_function,
+      projects,
+			setProjects_function,
+      contact,
+      setContact_function,
       section
 		}}>
 			{children}
