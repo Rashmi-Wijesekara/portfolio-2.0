@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
+import {DefaultContext} from "../../../context/DefaultContext"
 
 import logo from "../../../assets/portfolio/logo.svg";
 import {CVButton} from "../../components/."
@@ -6,6 +7,7 @@ import {ContactSide} from "../../components/."
 
 const Navbar = () => {
 	const mobileNavbar = useRef();
+	const { about, setAbout_function } = useContext(DefaultContext);
 
 	// mobile navbar show and hide
 	const mobileNavHandler = () => {
@@ -43,6 +45,11 @@ const Navbar = () => {
 		},
 	];
 
+	const navbarScrollHandler = (name) => {
+		// console.log(about)
+		setAbout_function()
+	}
+
 	return (
 		<>
 			<div className="backdrop-blur-lg fixed z-10 left-0 right-0 top-0 flex flex-row border-b-4 border-darkBlue py-2 md:mx-14">
@@ -67,13 +74,14 @@ const Navbar = () => {
 				{/* desktop navbar */}
 				<div className="hidden md:flex my-auto w-[80%] px-5 ml-auto">
 					{navigations.map((item) => (
-						<a
+						<div
 							className="text-fontLightBlue font-poppins font-semibold my-3 ml-3 mx-auto cursor-pointer hover:scale-125 transform duration-300 active:translate-y-2"
-							href={item.url}
+							// href={item.url}
 							key={item.id}
+							onClick={() => navbarScrollHandler(item.title)}
 						>
 							{item.title}
-						</a>
+						</div>
 					))}
 					<div className="ml-auto">
 						<CVButton />
@@ -87,13 +95,13 @@ const Navbar = () => {
 				className="bg__gradient fixed left-0 z-30 top-18 opacity-0 h-screen flex flex-col p-4 text-white md:hidden w-0 transition-[width] duration-1000"
 			>
 				{navigations.map((item) => (
-					<a
+					<div
 						className="text-fontLightBlue w-fit font-poppins font-semibold my-3 ml-3"
 						href={item.url}
 						key={item.id}
 					>
 						{item.title}
-					</a>
+					</div>
 				))}
 
 				<div className="mt-2 w-fit">

@@ -1,13 +1,34 @@
-import React from 'react'
+import React, {useContext, useRef, useState, useEffect} from 'react'
 import img from '../../assets/portfolio/about-image.svg'
+import {DefaultContext} from "../../context/DefaultContext"
+import {scrolling} from "../../functions/Scrolling"
 
 const About = () => {
+	const aboutRef = useRef()
+	const {about, setAbout_function} = useContext(DefaultContext)
+
+	useEffect(() => {
+		if(aboutRef) {
+			scrolling(aboutRef)
+		}
+	}, [about])
+	
+
 	return (
-		<div className="flex flex-col md:flex-row md:mx-20 md:my-10">
-			<div data-aos="flip-left" className="mx-10 md:mx-0 md:w-1/2">
+		<div
+			ref={aboutRef}
+			className="flex flex-col md:flex-row md:mx-20 md:py-20"
+		>
+			<div
+				data-aos="flip-left"
+				className="mx-10 md:mx-0 md:w-1/2"
+			>
 				<img src={img} alt="banner" className="w-full" />
 			</div>
-			<div data-aos="fade-left" className="my-10 md:my-auto md:ml-10">
+			<div
+				data-aos="fade-left"
+				className="my-10 md:my-auto md:ml-10"
+			>
 				<div className="font-poppins text-center md:text-left md:text-lg font-semibold text-fontLightBlue tracking-widest">
 					ABOUT ME
 				</div>
