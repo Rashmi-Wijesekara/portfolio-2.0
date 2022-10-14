@@ -21,7 +21,7 @@ const Projects = () => {
 	}, [projects]);
 
 	return (
-		<div ref={projectsRef} className="my-20 py-20">
+		<div ref={projectsRef} className="py-20">
 			<div className="my-10">
 				<div className="font-poppins text-center md:text-lg font-semibold text-fontLightBlue tracking-widest">
 					MY WORKS

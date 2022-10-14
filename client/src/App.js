@@ -11,6 +11,8 @@ import HeroBanner from "./portfolio/containers/HeroBanner";
 import About from "./portfolio/containers/About";
 import Skills from "./portfolio/containers/Skills";
 import Projects from "./portfolio/containers/Projects";
+import Contact from "./portfolio/containers/Contact";
+import Footer from "./portfolio/containers/Footer";
 
 function App() {
 	const { currentPath, setCurrentPath_function } =
@@ -24,6 +26,8 @@ function App() {
 			<About />
 			<Skills />
 			<Projects />
+			<Contact />
+			<Footer />
 		</>
 	);
 }
