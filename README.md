@@ -15,9 +15,9 @@
 
 ## Portfolio & Tech Blog
 
-📌Figma UI design - (URL)
+📌Figma UI design - [figma link](https://www.figma.com/file/j9tBiaNZpkJQos7U41mgGR/portfolio-2.0?node-id=0%3A1)
 <br>
-📌Live URL - (URL)
+📌Live URL - [https://rashmi-wijesekara.vercel.app/](https://rashmi-wijesekara.vercel.app/)
 <br><br>
 
 ## Admin
