@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { DefaultContext } from "./context/DefaultContext";
 
 // components
@@ -15,10 +15,15 @@ import Contact from "./portfolio/containers/Contact";
 import Footer from "./portfolio/containers/Footer";
 
 function App() {
-	const { currentPath } =
-		useContext(DefaultContext);
+	const { currentPath } = useContext(DefaultContext);
 
-		console.log(currentPath)
+	console.log(currentPath);
+
+	// auto scrolling at loading fixed
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<Navbar />

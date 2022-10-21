@@ -51,6 +51,8 @@ const Navbar = () => {
 	];
 
 	const navbarScrollHandler = (name) => {
+		console.log(name + " scrolling")
+		
 		if (name === "About") {
 			setAbout_function();
 		} else if (name === "Contact") {
