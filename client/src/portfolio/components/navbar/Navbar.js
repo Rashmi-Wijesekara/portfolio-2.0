@@ -11,7 +11,7 @@ const Navbar = () => {
 		setAbout_function,
 		setSkills_function,
 		setProjects_function,
-    setContact_function,
+		setContact_function,
 	} = useContext(DefaultContext);
 
 	// mobile navbar show and hide
@@ -23,11 +23,11 @@ const Navbar = () => {
 	};
 
 	const navigations = [
-		{
-			id: 1,
-			title: "Blog",
-			url: "/blog",
-		},
+		// {
+		// 	id: 1,
+		// 	title: "Blog",
+		// 	url: "/blog",
+		// },
 		{
 			id: 2,
 			title: "About",
@@ -51,16 +51,15 @@ const Navbar = () => {
 	];
 
 	const navbarScrollHandler = (name) => {
-
-		if(name === "About") {
+		if (name === "About") {
 			setAbout_function();
-		}else if(name === "Contact") {
+		} else if (name === "Contact") {
 			setContact_function();
-		}else if(name === "Projects") {
+		} else if (name === "Projects") {
 			setProjects_function();
-		}else if(name === "Skills") {
+		} else if (name === "Skills") {
 			setSkills_function();
-		}else if(name === "Blog") {
+		} else if (name === "Blog") {
 			console.log(name);
 		}
 	};
@@ -114,8 +113,12 @@ const Navbar = () => {
 				{navigations.map((item) => (
 					<div
 						className="text-fontLightBlue w-fit font-poppins font-semibold my-3 ml-3"
-						href={item.url}
+						// href={item.url}
 						key={item.id}
+						onClick={() => {
+							navbarScrollHandler(item.title)
+							mobileNavHandler()
+						}}
 					>
 						{item.title}
 					</div>

@@ -23,7 +23,7 @@ const Contact = () => {
 	}, [contact]);
 
 	return (
-		<div ref={contactRef} className="py-40">
+		<div ref={contactRef} className="py-20">
 			<div className="">
 				<div className="font-poppins text-center md:text-lg font-semibold text-fontLightBlue tracking-widest">
 					CONTACT
