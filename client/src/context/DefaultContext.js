@@ -6,7 +6,7 @@ const DefaultContext = React.createContext(false)
 // context provider
 const DefaultProvider = ({ children }) => {
 	const [currentPath, setCurrentPath] = useState(window.location.pathname)
-	const [section, setSection] = useState("")
+	// const [section, setSection] = useState("")
 	const [about, setAbout] = useState(false)
 	const [skills, setSkills] = useState(false)
 	const [projects, setProjects] = useState(false)
@@ -41,7 +41,7 @@ const DefaultProvider = ({ children }) => {
 			setProjects_function,
       contact,
       setContact_function,
-      section
+      // section
 		}}>
 			{children}
 		</DefaultContext.Provider>

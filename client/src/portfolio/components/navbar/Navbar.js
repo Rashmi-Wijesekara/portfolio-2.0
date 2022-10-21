@@ -8,13 +8,9 @@ import { ContactSide } from "../../components/.";
 const Navbar = () => {
 	const mobileNavbar = useRef();
 	const {
-		about,
 		setAbout_function,
-		skills,
 		setSkills_function,
-		projects,
 		setProjects_function,
-		contact,
     setContact_function,
 	} = useContext(DefaultContext);
 

@@ -12,7 +12,7 @@ import linkedin from "../../assets/portfolio/linkedin-link.svg"
 
 const Contact = () => {
 	const contactRef = useRef()
-	const {contact, setContact_function} = useContext(DefaultContext)
+	const {contact} = useContext(DefaultContext)
 
 	const openLink = (link) => {
 		window.open(link);

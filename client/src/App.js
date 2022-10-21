@@ -15,7 +15,7 @@ import Contact from "./portfolio/containers/Contact";
 import Footer from "./portfolio/containers/Footer";
 
 function App() {
-	const { currentPath, setCurrentPath_function } =
+	const { currentPath } =
 		useContext(DefaultContext);
 
 		console.log(currentPath)

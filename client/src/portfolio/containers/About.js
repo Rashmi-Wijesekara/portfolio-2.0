@@ -1,7 +1,6 @@
 import React, {
 	useContext,
 	useRef,
-	useState,
 	useEffect,
 } from "react";
 import img from "../../assets/portfolio/about-image.svg";
@@ -10,7 +9,7 @@ import { scrolling } from "../../functions/Scrolling";
 
 const About = () => {
 	const aboutRef = useRef();
-	const { about, setAbout_function } =
+	const { about } =
 		useContext(DefaultContext);
 
 	useEffect(() => {

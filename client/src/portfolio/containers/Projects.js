@@ -13,7 +13,7 @@ const Projects = () => {
 	const projectsData = projectsSamples.projects;
 
 	const projectsRef = useRef();
-	const { projects, setProjects_function } =
+	const { projects } =
 		useContext(DefaultContext);
 
 	useEffect(() => {

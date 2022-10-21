@@ -11,7 +11,7 @@ import skillsData from '../data/skills.json'
 
 const Skills = () => {
 	const skillsRef = useRef()
-	const {skills, setSkills_function} = useContext(DefaultContext)
+	const {skills} = useContext(DefaultContext)
 
 	useEffect(() => {
 		scrolling(skillsRef);
