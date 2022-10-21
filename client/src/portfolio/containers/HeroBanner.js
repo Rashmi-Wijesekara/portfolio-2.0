@@ -1,10 +1,19 @@
-import React from "react";
+import React, {useContext} from "react";
+import {DefaultContext} from "../../context/DefaultContext"
+
 import profilePic from "../../assets/portfolio/propic.svg";
 import { ButtonWhite } from "../components/.";
 import todoListIcon from "../../assets/portfolio/todo-list.svg";
 import githubIcon from "../../assets/portfolio/github-icon.svg";
 
 const HeroBanner = () => {
+	const {setProjects_function} = useContext(DefaultContext)
+
+	// scroll into the projects section
+	const projectScroller = () => {
+		setProjects_function()
+	}
+
 	return (
 		<div
 			className="font-poppins mt-20 text-white md:px-20 py-20"
@@ -24,6 +33,7 @@ const HeroBanner = () => {
 						<ButtonWhite
 							icon={todoListIcon}
 							title="Projects"
+							onClick={() => projectScroller()}
 						/>
 						<ButtonWhite
 							icon={githubIcon}
