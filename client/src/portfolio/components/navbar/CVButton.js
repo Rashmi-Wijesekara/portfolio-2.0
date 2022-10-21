@@ -4,7 +4,7 @@ import download from '../../../assets/portfolio/file-download.svg'
 const CVButton = () => {
 	const openCV = () => {
 		window.open(
-			"https://drive.google.com/file/d/1s5Luz1vJQs7tdZgC-uSUrcNudibEhVks/view?usp=sharing"
+			"https://drive.google.com/file/d/1ghlWruzjho8r1JfiP81cpBr4g7siQprj/view?usp=sharing"
 		);
 	}
 
