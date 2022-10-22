@@ -2,7 +2,7 @@
 name: Bug report
 about: contains information that is needed to fix a bug
 title: 'Bug: '
-labels: bug
+labels: 'bug 💥'
 assignees: Rashmi-Wijesekara
 
 ---

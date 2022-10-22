@@ -2,7 +2,7 @@
 name: Feature Issue
 about: A main feature that is divided into small tasks.
 title: 'Feature: '
-labels: enhancement
+labels: 'enhancement 🎖'
 assignees: Rashmi-Wijesekara
 
 ---
