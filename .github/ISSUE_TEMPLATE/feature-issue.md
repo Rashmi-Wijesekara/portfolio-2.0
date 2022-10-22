@@ -1,3 +1,12 @@
+---
+name: Feature Issue
+about: A main feature that is divided into small tasks.
+title: 'Feature: '
+labels: enhancement
+assignees: Rashmi-Wijesekara
+
+---
+
 # Feature Title
 
 Feature: 
