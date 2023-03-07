@@ -45,10 +45,6 @@ const About = () => {
 						challenging myself, and do interesting things
 						that matter.
 					</div>
-					<div className="">
-						I am interested in web development and hope to
-						become a frontend web developer.
-					</div>
 				</div>
 			</div>
 		</div>

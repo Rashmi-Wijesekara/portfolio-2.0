@@ -55,10 +55,10 @@ const HeroBanner = () => {
 					</div>
 					<ul className="list-disc font-light">
 						<li className="text-lg md:text-xl">
-							3rd year Software Engineering Undergraduate
+							Final year Undergraduate
 						</li>
 						<li className="text-lg md:text-xl">
-							Frontend Developer
+							Software Engineer
 						</li>
 					</ul>
 					<div className="text-lg md:text-xl font-light my-4 md:my-6">
