@@ -47,12 +47,12 @@
 					"icon": "material-ui"
 				},
 				{
-					"name": "React JS",
-					"icon": "react-js"
+					"name": "Semantic UI",
+					"icon": "semantic-ui"
 				},
 				{
-					"name": "Next JS",
-					"icon": "next-js"
+					"name": "React JS",
+					"icon": "react-js"
 				}
 			]
 		},
@@ -129,6 +129,10 @@
 				{
 					"name": "XAMPP",
 					"icon": "xampp"
+				},
+				{
+					"name": "Docker",
+					"icon": "docker"
 				}
 			]
 		}

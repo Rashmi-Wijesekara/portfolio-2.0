@@ -1,7 +1,15 @@
 {
 	"projects": [
 		{
-			"id": 1,
+			"id": 10,
+			"title": "Hotel Reservation System",
+			"image": "https://i.imgur.com/VLaDIf0.png",
+			"repo-link": "https://github.com/Rashmi-Wijesekara/hotel-reservation-alpha",
+			"description": "Hotel reservation system with 2 separate sites for customers and hotel staff which is implemented using the microservices architecture.",
+			"technologies": ["React JS", "Tailwind", "MERN", "Docker"]
+		},
+		{
+			"id": 9,
 			"title": "Portfolio v1.0",
 			"image": "https://i.imgur.com/Q8JMgxZ.png",
 			"live-link": "https://rashmi-wijesekara.github.io/portfolio/",
@@ -10,7 +18,7 @@
 			"technologies": ["HTML, CSS", "Boostrap"]
 		},
 		{
-			"id": 2,
+			"id": 8,
 			"title": "Smart Parking System",
 			"image": "https://i.imgur.com/dGNsaqr.png",
 			"repo-link": "https://github.com/Rashmi-Wijesekara/smart-parking-system-security-officer",
@@ -19,7 +27,7 @@
 			"technologies": ["React JS", "Tailwind", "MERN"]
 		},
 		{
-			"id": 3,
+			"id": 7,
 			"title": "Travel Agency Landing Page",
 			"image": "https://i.imgur.com/ChpnmhS.png",
 			"repo-link": "https://github.com/Rashmi-Wijesekara/travel-agency-landing-page",
@@ -28,7 +36,7 @@
 			"technologies": ["React JS", "Boostrap"]
 		},
 		{
-			"id": 4,
+			"id": 6,
 			"title": "Blog Site UI Design",
 			"image": "https://i.imgur.com/8EoQp2V.png",
 			"design-link": "https://www.figma.com/file/AQmnCqmfNKCuc3AYvINoqp/my-blog?node-id=0%3A1",
@@ -44,7 +52,7 @@
 			"technologies": ["Figma"]
 		},
 		{
-			"id": 6,
+			"id": 4,
 			"title": "Digital Agency Landing Page",
 			"image": "https://i.imgur.com/MivVZ9P.png",
 			"repo-link": "https://github.com/Rashmi-Wijesekara/digital-agency-landing-page",
@@ -53,7 +61,7 @@
 			"technologies": ["HTML, CSS", "Tailwind"]
 		},
 		{
-			"id": 7,
+			"id": 3,
 			"title": "TabSaver Chrome Extension",
 			"image": "https://i.imgur.com/3aNdfLd.png",
 			"repo-link": "https://github.com/Rashmi-Wijesekara/Tabsaver-chrome-extension",
@@ -61,7 +69,7 @@
 			"technologies": ["HTML, CSS", "Javascript"]
 		},
 		{
-			"id": 8,
+			"id": 2,
 			"title": "Ceylon Tea Cloud",
 			"image": "https://i.imgur.com/RPsPHjp.png",
 			"repo-link": "https://github.com/kavishkamk/ceylonTeaCloud",
@@ -74,7 +82,7 @@
 			]
 		},
 		{
-			"id": 9,
+			"id": 1,
 			"title": "ChatChops",
 			"image": "https://i.imgur.com/dxUS2sa.png",
 			"repo-link": "https://github.com/Rashmi-Wijesekara/ChatChops",
