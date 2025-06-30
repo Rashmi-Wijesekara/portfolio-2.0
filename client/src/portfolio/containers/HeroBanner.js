@@ -54,16 +54,19 @@ const HeroBanner = () => {
 						Rashmi Wijesekara
 					</div>
 					<ul className="list-disc font-light">
-						<li className="text-lg md:text-xl">
-							Final year Undergraduate
-						</li>
+						// <li className="text-lg md:text-xl">
+						// 	Final year Undergraduate
+						// </li>
 						<li className="text-lg md:text-xl">
 							Software Engineer
 						</li>
+						<li className="text-lg md:text-xl">
+							Based in Sri Lanka
+						</li>
 					</ul>
-					<div className="text-lg md:text-xl font-light my-4 md:my-6">
-						based in Sri Lanka
-					</div>
+					// <div className="text-lg md:text-xl font-light my-4 md:my-6">
+					// 	based in Sri Lanka
+					// </div>
 				</div>
 			</div>
 		</div>
