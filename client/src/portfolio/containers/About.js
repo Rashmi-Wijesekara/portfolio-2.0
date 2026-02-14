@@ -39,11 +39,7 @@ const About = () => {
 				</div>
 				<div className="text-lightPara font-poppins font-light text-xs sm:text-sm max-w-lg px-5 md:px-0 mx-auto md:mx-0 mt-5 md:mt-10">
 					<div className="mb-5">
-						I started my coding journey in 2020, when I
-						started doing my degree in Software Engineering.
-						Since then, I prefer to keep learning, continue
-						challenging myself, and do interesting things
-						that matter.
+						Software Engineer with 3 years of industry experience building and deploying full-stack applications. Strong background in backend development using .NET and Node.js, with hands-on expertise in modern frontend technologies including React.js, Angular and Next.js. Focused on writing clean, maintainable, and scalable code while collaborating effectively within cross-functional teams. Passionate about continuous learning, adopting best practices, and delivering high-quality software solutions.
 					</div>
 				</div>
 			</div>
